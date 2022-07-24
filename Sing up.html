@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css'>
+ <style>
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 13px;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin:40px;
+  }
+  
+.container img {vertical-align: middle;}
+  
+.container .content {
+    position: absolute;
+    bottom:0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 500px;
+    padding: 30px;
+    margin-left: 500px;
+    margin-top: 500px;
+    height: 65vh;
+    border-radius: 5px;
+  }
+  .footer {
+    background-color: #8BC6EC;
+ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  
+     background-size: cover;
+      
+ }
+ .first {
+     margin-top: 40px;
+     margin-bottom: 50px;
+     color: #fff;
+     font-family: 'Poppins', sans-serif;
+ }
+    .first h4 {
+         font-size: 20px;
+         letter-spacing: 3px;
+         position: relative;
+         margin-bottom: 20px;
+         font-size: 1.6em;
+         color: #fff;
+         padding-bottom: 0.5em;
+     }
+         .first h4::after {
+             content: '';
+             background: #66c83d;
+             width: 20%;
+             height: 2px;
+             position: absolute;
+             bottom: 0;
+             left: 0;
+         }
+  
+     .first p {
+         font-size: 14px;
+     }
+  
+ .second {
+     margin-top: 40px;
+     margin-bottom: 50px;
+     color: #FFF;
+     font-family: 'Poppins', sans-serif;
+     text-align: center;
+ }
+ .second2 {
+     margin-top: 40px;
+     margin-bottom: 50px;
+     color: #FFF;
+     font-family: 'Poppins', sans-serif;
+     text-align: center;
+ }
+  
+ .second h4 {
+     font-size: 20px;
+     letter-spacing: 3px;
+     position: relative;
+     margin-bottom: 20px;
+     font-size: 1.6em;
+     color: #fff;
+     padding-bottom: 0.5em;
+ }
+     .second h4::after {
+         content: '';
+         background: #66c83d;
+         width: 20%;
+         height: 2px;
+         position: absolute;
+         bottom: 0;
+         left: 40%;
+     }
+ .second li {
+     list-style: none;
+     padding-bottom: 30px;
+ }
+  
+ .second a, .second2 a {
+     color: #FFF;
+     text-decoration: none;
+     letter-spacing: 3px;
+     font-weight: bold;
+     font-size: 14px;
+     transition: 0.2s;
+ }
+     .second a:hover, .second2 a:hover {
+         color: #fff;
+         transition: 0.2s;
+         text-shadow: 1px 1px 20px rgba(0,0,0,1);
+         text-decoration: none
+  
+     }
+ .third {
+     margin-top: 40px;
+     margin-bottom: 50px;
+     color: #FFF;
+     font-family: 'Poppins', sans-serif;
+     text-align: right;
+ }
+     .third h4 {
+         font-size: 20px;
+         letter-spacing: 3px;
+         position: relative;
+         margin-bottom: 20px;
+         font-size: 1.6em;
+         color: #fff;
+         padding-bottom: 0.5em;
+     }
+         .third h4::after {
+             content: '';
+             background: #66c83d;
+             width: 20%;
+             height: 2px;
+             position: absolute;
+             bottom: 0;
+             left: 80%;
+         }
+     .third li {
+         list-style: none;
+         padding-bottom: 15px;
+     }
+     .third a {
+         color: rgb(206, 206, 206);
+         text-decoration: none;
+         letter-spacing: 3px;
+         font-weight: bold;
+         font-size: 14px;
+         transition: 0.2s;
+     }
+         .third a:hover {
+             color: #fff;
+             transition: 0.2s;
+             text-shadow: 1px 1px 20px rgba(0,0,0,1);
+         }
+ @media screen and (max-width:1000px) {
+     .first {
+         text-align: center;
+     }
+  
+         .first h4::after {
+             left: 40%;
+         }
+ }
+  
+ @media screen and (max-width:1000px) {
+     .third {
+         text-align: center;
+     }
+  
+         .third h4::after {
+             left: 40% !important;
+         }
+ }
+  
+ .margin {
+     margin-left: 20px;
+ }
+  
+ .line {
+     height:2px;
+     background-color:rgb(206,206,206);
+     width:100%;
+ }
+ </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <div class="npr">
+      <h1 style="text-shadow: 0 0 8px #ec0303">Beauty</h1></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn btn-danger">Home</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button type="button" class="btn btn-danger">Login</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><button type="button" class="btn btn-danger" disabled>Sing up</button></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section class="h-100 bg-dark">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                  alt="Sample photo" class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              </div>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase">Registration form</h3>
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1m">First name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1n">Last name</label>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1m1">Mobile Number</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1n1">Father's name</label>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example8">Address-1</label>
+                  </div>
+  
+                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+  
+                    <h6 class="mb-0 me-4">Gender: </h6>
+  
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                        value="option1" />
+                      <label class="form-check-label" for="femaleGender">Female</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                        value="option2" />
+                      <label class="form-check-label" for="maleGender">Male</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                        value="option3" />
+                      <label class="form-check-label" for="otherGender">Other</label>
+                    </div>
+  
+                  </div>
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+  
+                      <select class="select">
+                        <option value="1">State</option>
+                        <option value="2">Madhya Pradesh</option>
+                        <option value="3">maharashtra</option>
+                        <option value="4">Chhattisgarh</option>
+                      </select>
+  
+                    </div>
+                    <div class="col-md-6 mb-4">
+  
+                      <select class="select">
+                        <option value="1">City</option>
+                        <option value="2">bhopal</option>
+                        <option value="3">Mumbai</option>
+                        <option value="4">Raipur</option>
+                      </select>
+  
+                    </div>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example9" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example9">DOB</label>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example90" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example90">Pincode</label>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example99" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example99">Address-2</label>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example97" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example97">Email ID</label>
+                  </div>
+  
+                  <div class="d-flex justify-content-end pt-3">
+                    <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                    <button type="button" class="btn btn-warning btn-lg ms-2">Submit form</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- footer -->
+   <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="first">
+                    <h4>My Skills</h4>
+                    <p> Analytical Skills</p>
+                    <p> Problem-solving skills</p>
+                    <p> Critical-thinking skills</p>
+                    <p> Detail-oriented</p>
+                    <p> Multitasking</p>
+                    <p> Self-motivated</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="second">
+                    <h4> Navigate</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="third">
+                    <h4> Contact</h4>
+                    <ul>
+                        <li>W3school Web</li>
+                        <li></li>
+
+
+                      <li><i class="far fa-envelope"></i> w3schoolweb@gmail.com</li>
+                        <li><i class="far fa-envelope"></i> email@gmail.com</li>
+
+
+                      <li><i class="fas fa-map-marker-alt"></i> London, UK </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="line"></div>
+                <div class="second2">
+                    <a href="#" target="_blank"> <i class="fab fa-codepen fa-2x margin"></i></a>
+                    <a href="#" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                    <a href="#" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+</div>
+  <script>
+    function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+} else {
+  x.className = "topnav";
+}
+}
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

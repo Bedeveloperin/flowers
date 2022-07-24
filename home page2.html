@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home page 2</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Faster One' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
+    @media screen and (max-width: 600px) 
+  .navbar-toggler.responsive {position: relative;}
+  .navbar-toggler.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  } 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.wrap {
+      overflow: hidden;
+      margin: 10px;
+    }
+    .box {
+      float: left;
+      position: relative;
+      width: 20%;
+      padding-bottom: 20%;
+    }
+    .boxInner {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      overflow: hidden;
+    }
+    .boxInner img {
+      width: 100%;
+    }
+    .boxInner .titleBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: -50px;
+      background: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      color: #FFF;
+      padding: 10px;
+      text-align: center;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+    section.no-touch .boxInner:hover .titleBox, section.touch .boxInner.touchFocus .titleBox {
+      margin-bottom: 0;
+    }
+    @media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+      .box {
+        width: 100%;
+        padding-bottom: 100%;
+      }
+    }
+    @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 2 tiles */
+      .box {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+    }
+    @media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view: 3 tiles */
+      .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+    }
+    @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+      /* Medium desktop: 4 tiles */
+      .box {
+        width: 25%;
+        padding-bottom: 25%;
+      }
+    }
+ 
+.npr.h1{
+  font-family: 'Faster One';font-size: 22px;
+}
+    </style>
+    <body style="background-color:#00E0c6; ">
+     <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <div class="npr">
+    <h1 style="text-shadow: 0 0 8px #ec0303; font-family: 'Faster One';font-size: 22px;">Beauty</h1></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link btn-danger active" href="#"><button type="button" class="btn btn-danger" disabled>Home</button> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-danger active" href="#"><button type="button" class="btn btn-danger">Login</button></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-danger active"><button type="button" class="btn btn-danger">Sing up</button></a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<section class="no-touch">
+  <div class="wrap">
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/1.jpg" />
+        <div class="titleBox">An old greenhouse</div>
+      </div>
+    </div>
+ 
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/2.jpg" />
+        <div class="titleBox">Purple wildflowers</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/3.jpg" />
+        <div class="titleBox">A birdfeeder</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/10.jpg" />
+        <div class="titleBox">Crocus close-up</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="boostrap/image21.jpg" />
+        <div class="titleBox">The garden shop</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="boostrap/ga15.jpg" />
+        <div class="titleBox">Spring daffodils</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="boostrap/bk6.jpg" />
+        <div class="titleBox">Iris along the path</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="boostrap/916.jpg" />
+        <div class="titleBox">The garden blueprint</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="boostrap/17.jpg" />
+        <div class="titleBox">The patio</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="boostrap/14.jpg" />
+        <div class="titleBox">Bumble bee collecting nectar</div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" >
+        <div class="card m-5">
+          <img src="boostrap/image26.jpg" class="card-img-top" alt="..." width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i></i>299</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-5" >
+          <img src="boostrap/image3.jpg" class="card-img-top" alt="..."  width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i>425</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-5">
+          <img src="boostrap/image2.jpg" class="card-img-top" alt="..."  width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i>490</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" >
+        <div class="card m-5">
+          <img src="boostrap/image26.jpg" class="card-img-top" alt="..." width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i></i>299</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-5" >
+          <img src="boostrap/image3.jpg" class="card-img-top" alt="..."  width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i>425</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-5">
+          <img src="boostrap/image2.jpg" class="card-img-top" alt="..."  width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i>490</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" >
+        <div class="card m-5">
+          <img src="boostrap/image26.jpg" class="card-img-top" alt="..." width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i></i>299</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-5" >
+          <img src="boostrap/image3.jpg" class="card-img-top" alt="..."  width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i>425</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-5">
+          <img src="boostrap/image2.jpg" class="card-img-top" alt="..."  width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i>490</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" >
+        <div class="card m-5">
+          <img src="boostrap/image26.jpg" class="card-img-top" alt="..." width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i></i>299</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-5" >
+          <img src="boostrap/image3.jpg" class="card-img-top" alt="..."  width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i>425</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-5">
+          <img src="boostrap/image2.jpg" class="card-img-top" alt="..."  width="320" height="320">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-indian-rupee-sign"></i>490</h5>
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+      function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+const imgContent = document.querySelectorAll(".img-content-hover");
+ 
+function showImgContent(e) {
+  for (var i = 0; i < imgContent.length; i++) {
+    x = e.pageX;
+    y = e.pageY;
+    imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
+  }
+}
+ 
+document.addEventListener("mousemove", showImgContent);
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

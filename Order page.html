@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Hello</title>
+<meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"  href="css/style.css"/>
+<script src="https://kit.fontawesome.com/1c64a616ed.js" crossorigin="anonymous"></script>
+<script type="text/javascript">/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+// Open the full screen search box
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+// Close the full screen search box
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);
+  }
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  document.getElementById("header").style.fontSize = "30px";
+  } else {
+  document.getElementById("header").style.fontSize = "90px";
+  }
+  }
+</script> 
+</head>
+<body style="background-image: linear-gradient(to right, #DBD5ED, #F3E7EA);
+">
+<img src="wikagraphic201115440.jpg"/>
+
+<div class="nav-bar">
+  
+  
+  <div id="myNav" class="overlay">
+  <ul>
+  <!-- Button to close the overlay navigation -->
+  <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+  
+  <!-- Overlay content -->
+  <div class="overlay-content">
+  <li><a href="Login" >Login</a></li>
+  <li><a href="not-bar" >Notifaction</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Clients</a></li>
+  <li><a href="#">Contact</a></li>
+  </ul>
+  </div>
+  
+  </div>
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <span onclick="openNav()"><img src="bars-solid.jpg"></span>
+<i class="far fa-arrow-alt-circle-down" style='font-size:34; margin-left:242px;'></i>
+<form class="example" action="action_page.php"><i class="fas-fa-microphone" style='font-size:36px color:#ffff'></i>
+<input type="text" placeholder="Search.." name="search">
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<div class="scrollmenu">
+  <a href="https://www.justwatch.com/in/movies">Movies</a>
+  <a href="https://www.cartoonnetworkhq.com/">cartoon</a>
+  <a href="https://www.viki.com/genres/web-drama?locale=en">Web series</a>
+  <a href="https://www.yidio.com/filter/free">Tv serial</a>
+  <a href="https://vikrantsports.club/?gclid=CjwKCAjww8mWBhABEiwAl6-2RRY4ZMyeg_XgXFWNu069D83OcJG9k1fJp3UnYE7L-e4gXvZV_2W7qRoC7ZgQAvD_BwE">cricket</a>
+  <a href="https://wynk.in/music">Music</a>
+  </div>
+</div>
+<div>
+<div class="header">Entertainment</div>
+<video width="340" height="260" controls>
+  <source src="mov_ddd.m4v.mp4" type="video/mp4">
+  <source src="mov_ddd.m4v.ogg" type="video/ogg">
+  </video>
+<div style="margin-top:200px;padding:15px 15px 1000px;font-size:30px">
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class="bg-image img6"></div>
+<div class="bg-image img7"></div>
+<div class="bg-image img8"></div>
+<div class="bg-image img9"></div>
+<div class="bg-image img10"></div>
+<div class="bg-image img11"></div>
+<div class="bg-image img12"></div>
+<div class="bg-image img13"></div>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+  <i class='fas fa-play' style='font-size:36px'></i> Watching Now
+  </div>
+  <div class="w3-display-middle">
+  <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+  <hr class="w3-border-grey" style="margin:auto;width:40%">
+  <p class="w3-large w3-center">35 days left</p>
+  </div>
+  </div>
+</div>
+<footer class="footer1">
+<i class="fab fa-facebook-square" style="font-size:26px"></i>
+<i class="fab fa-google-plus-g" style="font-size:26px"></i>
+<i class="fab fa-instagram" style="font-size:26px"></i>
+  <p>Author: Hege Refsnes<br>
+  <div class="w3-display-bottomleft">
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+</body>
+</html>

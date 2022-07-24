@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css'>
+</head>
+
+ <style>
+  body {
+    padding-top: 50px;
+    background-color:  #00E0c6;
+  margin:0px;
+  font-family: 'Ubuntu', sans-serif;
+    background-size: 100% 100%;
+}
+  h1, h2, h3, h4, h5, h6, a {
+  margin:0; padding:0;
+}
+.login {
+  margin:0 auto;
+  max-width:500px;
+}
+.login-header {
+  color:#fff;
+  text-align:center;
+  font-size:300%;
+}
+/* .login-header h1 {
+   text-shadow: 0px 5px 15px #000; */
+.login-form {
+  border:.5px solid #fff;
+  background-color:rgba(255,255,255,0.3);
+  backdrop-filter: blur(12px);
+  border-radius:10px;
+  box-shadow:0px 0px 10px #000;
+}
+.login-form h3 {
+  text-align:left;
+  margin-left:40px;
+  color:#fff;
+}
+.login-form {
+  box-sizing:border-box;
+  padding-top:15px;
+    padding-bottom:10%;
+  margin:5% auto;
+  text-align:center;
+}
+.login input[type="text"],
+.login input[type="password"] {
+  max-width:400px;
+    width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+.login-form input[type="button"] {
+  height:30px;
+  width:100px;
+  background:#fff;
+  border:1px solid #f2f2f2;
+  border-radius:20px;
+  color: slategrey;
+  text-transform:uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor:pointer;
+}
+.sign-up{
+  color:#f2f2f2;
+  margin-left:-70%;
+  cursor:pointer;
+  text-decoration:underline;
+}
+.no-access {
+  color:#E86850;
+  margin:20px 0px 20px -57%;
+  text-decoration:underline;
+  cursor:pointer;
+}
+.try-again {
+  color:#f2f2f2;
+  text-decoration:underline;
+  cursor:pointer;
+}
+ 
+/*Media Querie*/
+@media only screen and (min-width : 150px) and (max-width : 530px){
+  .login-form h3 {
+    text-align:center;
+    margin:0;
+  }
+  .sign-up, .no-access {
+    margin:10px 0;
+  }
+  .login-button {
+    margin-bottom:10px;
+  }
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin:40px;
+  }
+  
+  .container img {vertical-align: middle;}
+  
+  .container .content {
+    position: absolute;
+    bottom:0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 500px;
+    padding: 30px;
+    margin-left: 500px;
+    margin-top: 500px;
+    height: 65vh;
+    border-radius: 5px;
+  }
+  .footer {
+    background-color: #8BC6EC;
+ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  
+     background-size: cover;
+      
+ }
+  
+  
+  
+ .first {
+     margin-top: 40px;
+     margin-bottom: 50px;
+     color: #fff;
+     font-family: 'Poppins', sans-serif;
+ }
+  
+     .first h4 {
+         font-size: 20px;
+         letter-spacing: 3px;
+         position: relative;
+         margin-bottom: 20px;
+         font-size: 1.6em;
+         color: #fff;
+         padding-bottom: 0.5em;
+     }
+  
+         .first h4::after {
+             content: '';
+             background: #66c83d;
+             width: 20%;
+             height: 2px;
+             position: absolute;
+             bottom: 0;
+             left: 0;
+         }
+  
+     .first p {
+         font-size: 14px;
+     }
+  
+ .second {
+     margin-top: 40px;
+     margin-bottom: 50px;
+     color: #FFF;
+     font-family: 'Poppins', sans-serif;
+     text-align: center;
+ }
+  
+ .second2 {
+     margin-top: 40px;
+     margin-bottom: 50px;
+     color: #FFF;
+     font-family: 'Poppins', sans-serif;
+     text-align: center;
+ }
+  
+ .second h4 {
+     font-size: 20px;
+     letter-spacing: 3px;
+     position: relative;
+     margin-bottom: 20px;
+     font-size: 1.6em;
+     color: #fff;
+     padding-bottom: 0.5em;
+ }
+  
+     .second h4::after {
+         content: '';
+         background: #66c83d;
+         width: 20%;
+         height: 2px;
+         position: absolute;
+         bottom: 0;
+         left: 40%;
+     }
+  
+  
+ .second li {
+     list-style: none;
+     padding-bottom: 30px;
+ }
+  
+ .second a, .second2 a {
+     color: #FFF;
+     text-decoration: none;
+     letter-spacing: 3px;
+     font-weight: bold;
+     font-size: 14px;
+     transition: 0.2s;
+ }
+  
+     .second a:hover, .second2 a:hover {
+         color: #fff;
+         transition: 0.2s;
+         text-shadow: 1px 1px 20px rgba(0,0,0,1);
+         text-decoration: none
+  
+     }
+  
+  
+  
+ .third {
+     margin-top: 40px;
+     margin-bottom: 50px;
+     color: #FFF;
+     font-family: 'Poppins', sans-serif;
+     text-align: right;
+ }
+  
+  
+     .third h4 {
+         font-size: 20px;
+         letter-spacing: 3px;
+         position: relative;
+         margin-bottom: 20px;
+         font-size: 1.6em;
+         color: #fff;
+         padding-bottom: 0.5em;
+     }
+  
+  
+         .third h4::after {
+             content: '';
+             background: #66c83d;
+             width: 20%;
+             height: 2px;
+             position: absolute;
+             bottom: 0;
+             left: 80%;
+         }
+  
+  
+  
+     .third li {
+         list-style: none;
+         padding-bottom: 15px;
+     }
+  
+  
+     .third a {
+         color: rgb(206, 206, 206);
+         text-decoration: none;
+         letter-spacing: 3px;
+         font-weight: bold;
+         font-size: 14px;
+         transition: 0.2s;
+     }
+  
+  
+         .third a:hover {
+             color: #fff;
+             transition: 0.2s;
+             text-shadow: 1px 1px 20px rgba(0,0,0,1);
+         }
+  
+  
+ @media screen and (max-width:1000px) {
+     .first {
+         text-align: center;
+     }
+  
+         .first h4::after {
+             left: 40%;
+         }
+ }
+  
+ @media screen and (max-width:1000px) {
+     .third {
+         text-align: center;
+     }
+  
+         .third h4::after {
+             left: 40% !important;
+         }
+ }
+  
+ .margin {
+     margin-left: 20px;
+ }
+  
+ .line {
+     height:2px;
+     background-color:rgb(206,206,206);
+     width:100%;
+ }
+ </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-opacity-100">
+    <div class="container-fluid">
+      <div class="npr me-5">
+      <h1 style="text-shadow: 0 0 8px #ec0303"> Beauty </h1>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn btn-danger ">Home</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button type="button" class="btn btn-danger"disabled>Login</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><button type="button" class="btn btn-danger" >Sing up</button></a>
+          </li>
+        </ul>
+
+        </div>
+        </div>
+  </nav>
+  <div class="login">
+    <div class="login-header">
+      <h1>Login</h1>
+    </div>
+    <div class="login-form">
+      <h3>Username:</h3>
+      <input type="text" placeholder="Username"/><br>
+      <h3>Password:</h3>
+      <input type="password" placeholder="Password"/>
+      <br>
+      <input type="button" value="Login" class="login-button"/>
+      <br>
+      <a class="sign-up">Sign Up!</a>
+      <br>
+      <h6 class="no-access">Can't access your account?</h6>
+    </div>
+  </div>
+  <div class="error-page">
+    <div class="try-again">Error: Try again?</div>
+  </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-xs-12">
+                  <div class="first">
+                      <h4>My Skills</h4>
+                      <p> Analytical Skills</p>
+                      <p> Problem-solving skills</p>
+                      <p> Critical-thinking skills</p>
+                      <p> Detail-oriented</p>
+                      <p> Multitasking</p>
+                      <p> Self-motivated</p>
+                  </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12">
+                  <div class="second">
+                      <h4> Navigate</h4>
+                      <ul>
+                          <li><a href="#">Help</a></li>
+                          <li><a href="#">Projects</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12">
+                  <div class="third">
+                      <h4> Contact</h4>
+                      <ul>
+                          <li>W3school Web</li>
+                          <li></li>
+
+
+                        <li><i class="far fa-envelope"></i> w3schoolweb@gmail.com</li>
+                          <li><i class="far fa-envelope"></i> email@gmail.com</li>
+
+
+                        <li><i class="fas fa-map-marker-alt"></i> London, UK </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="line"></div>
+                  <div class="second2">
+                      <a href="#" target="_blank"> <i class="fab fa-codepen fa-2x margin"></i></a>
+                      <a href="#" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                      <a href="#" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+
+                  </div>
+
+              </div>
+          </div>
+          </div>
+  </div>
+  <script>
+    function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+} else {
+  x.className = "topnav";
+}
+}
+$('.error-page').hide(0);
+ 
+$('.login-button , .no-access').click(function(){
+  $('.login').slideUp(500);
+  $('.error-page').slideDown(1000);
+});
+ 
+$('.try-again').click(function(){
+  $('.error-page').hide(0);
+  $('.login').slideDown(1000);
+})
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></s>
+</body>
+</html>
